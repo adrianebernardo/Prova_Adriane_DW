@@ -1,0 +1,115 @@
+:root {
+  --branco: #ffffff;
+  --preto: #000000;
+  --verdin: #006400;
+  --verdasso: #1a7a1a; /* oi prof, coloquei o verde aqui pq era o padrão, mas substitui por goiaba xD */
+  --cinza: #888888;
+  --goiaba: #b7434d;
+  --roxo: #6f2da8;
+}
+
+body {
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+h2, h3, h4, p {
+  margin: 0;
+}
+
+.box {
+  width: 620px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 16px 0;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 76px;
+  border: 1px solid var(--preto);
+  border-radius: 50%;
+  background-color: var(--branco);
+  color: var(--preto);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.day-active {
+  background-color: var(--goiaba);
+  color: var(--branco);
+}
+
+.time-slot {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.hour {
+  width: 60px;
+  margin-top: 8px;
+  font-size: 22px;
+  text-align: right;
+}
+
+.card {
+  width: 600px;
+  padding: 24px;
+  border: 1px solid var(--goiaba);
+  border-radius: 8px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.badge {
+  padding: 6px 14px;
+  border: 1px solid var(--roxo);
+  border-radius: 6px;
+}
+
+.title {
+  margin: 20px 0 14px 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--goiaba);
+  font-size: 24px;
+}
+
+.speakers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.speaker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.speaker img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.speaker h4,
+.speaker p {
+  font-size: 18px;
+}
